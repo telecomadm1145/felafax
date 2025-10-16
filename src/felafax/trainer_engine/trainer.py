@@ -36,7 +36,7 @@ def get_mesh(num_tpus: int, mesh_shape: Optional[Tuple[int, int, int]] = None):
         elif num_tpus == 4:
             mesh_shape = (1, 2, 2)
         elif num_tpus == 8:
-            mesh_shape = (2, 2, 2)
+            mesh_shape = (1, 2, 4) # TPU v5e-8
         elif num_tpus == 16:
             mesh_shape = (1, 4, 4)
         else:
